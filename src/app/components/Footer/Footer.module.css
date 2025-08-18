@@ -1,0 +1,78 @@
+.wrapFooter {
+  background: #1a1a1a;
+  padding: 45px 0px 12px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footerLogoBlock {
+  margin-bottom: 28px;
+}
+
+.footerLogoBlockFirstText {
+  margin-right: 19.85px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+
+  /* line-height: 24px; */
+  line-height: 1.84615;
+  color: #f0e2d0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.footerLogoBlockSecondText {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 13px;
+
+  /* line-height: 24px; */
+  line-height: 1.84615;
+  color: var(--grey);
+  text-align: center;
+}
+
+.footerNav {
+  margin-bottom: 119px;
+  display: flex;
+  justify-content: center;
+}
+
+.footerNavList {
+  display: flex;
+  gap: 31px;
+}
+
+.footerNavItem {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+
+  /* line-height: 28px; */
+  line-height: 1.75;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.footerCopyRightBox {
+  padding: 0px 62px 0px 62px;
+}
+
+.footerCopyRightBorder {
+  margin-bottom: 15px;
+  height: 1px;
+  background-color: var(--light-black);
+  border: none;
+}
+
+.footerCopyRightText {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 13px;
+
+  /* line-height: 24px; */
+  line-height: 1.84615;
+  color: #6e6962;
+  text-align: center;
+}
