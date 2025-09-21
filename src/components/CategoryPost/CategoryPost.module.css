@@ -1,7 +1,7 @@
 .wrapCategoryPost {
   background-color: rgba(237, 197, 140, 0.5);
 
-  padding: 54px 62px 109px 62px;
+  padding: 54px 0 109px 0;
 }
 
 .categoryPostTitle {
@@ -44,6 +44,7 @@
   height: 304px;
   border-radius: 24px;
   margin-bottom: 16px;
+  object-fit: cover;
 }
 
 .categoryPostItemInfo {

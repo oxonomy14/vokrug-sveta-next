@@ -1,7 +1,7 @@
 import React from 'react';
 import css from './About.module.css';
 import clsx from 'clsx';
-import Container from '@/app/components/Container/Container';
+import Container from '@/components/Container/Container';
 
 export default function About() {
   return (

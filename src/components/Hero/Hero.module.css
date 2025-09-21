@@ -4,6 +4,6 @@
 }
 
 .slider {
-  height: 688px;
-  background-color: var(--light-orange);
+  height: 100%;
+  background-color: transparent ;
 }

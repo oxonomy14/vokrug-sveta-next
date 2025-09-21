@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import css from './Header.module.css';
 import clsx from 'clsx';
-import Container from '@/app/components/Container/Container';
+import Container from '@/components/Container/Container';
 
 export default function Header() {
   return (
@@ -50,17 +50,17 @@ export default function Header() {
               </li>
               <li className={css.navItem}>
                 <Link href="/" aria-label="Главная" className={css.navItemText}>
-                  Отдых и туризм
+                  Отдых
                 </Link>
               </li>
               <li className={css.navItem}>
                 <Link href="/" aria-label="Главная" className={css.navItemText}>
-                  Гостиницы/Отели
+                  Гостиницы
                 </Link>
               </li>
               <li className={css.navItem}>
                 <Link href="/" aria-label="Главная" className={css.navItemText}>
-                  Путешествия/Туры
+                  Путешествия
                 </Link>
               </li>
               <li className={css.navItem}>

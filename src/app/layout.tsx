@@ -18,9 +18,17 @@
 // };
 import type { Metadata } from 'next';
 import React from 'react';
+import '@fontsource/inter/400.css'; // Regular
+import '@fontsource/inter/500.css'; // Medium
+import '@fontsource/inter/600.css'; // Semi Bold
+import 'modern-normalize';
 import './globals.css';
-import Header from '@/app/components/Header/Header';
-import Footer from '@/app/components/Footer/Footer';
+import Header from '@/components/Header/Header';
+import Footer from '@/components/Footer/Footer';
+
+import { store } from "../redux/store";
+import { Providers } from "./providers";
+
 
 export const metadata: Metadata = {
   title: 'Куда съездить отдохнуть: блог о путешествиях',
@@ -36,14 +44,19 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className="wrapper">
+          <Providers>
         <header>
           <Header />
-        </header>
+        </header>    
         <main> {children}</main>
         <footer>
           <Footer />
         </footer>
+        </Providers>
       </body>
     </html>
   );
 }
+
+
+

@@ -4,11 +4,12 @@
   aspect-ratio: 868 / 496; /* сохраняем пропорции */
   overflow: hidden;
   border-radius: 12px; /* красиво скруглим углы */
+  margin-bottom: 16px;
 }
 
 .categoryPostItemImg {
   object-fit: cover;
-  margin-bottom: 16px;
+  
 }
 
 .categoryPostItemInfo {
@@ -33,7 +34,7 @@
 }
 
 .categoryPostItemInfoAuthor {
-  font-family: var(--font-family);
+
   font-weight: 500;
   font-size: 13px;
 
@@ -43,25 +44,15 @@
 }
 
 .categoryPostItemTitle {
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 23px;
-
+ 
+  font-weight: 400;
+  font-size: 33px;
   /* line-height: 32px; */
   line-height: 1.3913;
   text-transform: none;
   color: var(--black);
   max-width: 420px;
-  margin-bottom: 12px;
+  
 }
 
-.categoryPostItemDesc {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 16px;
 
-  /* line-height: 28px; */
-  line-height: 1.75;
-  color: var(--light-black);
-  max-width: 420px;
-}

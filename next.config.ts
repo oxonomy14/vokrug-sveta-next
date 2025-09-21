@@ -10,6 +10,13 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+i18n: {
+    locales: ['ru', 'uk'],      
+    defaultLocale: 'ru',         
+    localeDetection: false,     
+  },
 };
 
 export default nextConfig;
+
+
