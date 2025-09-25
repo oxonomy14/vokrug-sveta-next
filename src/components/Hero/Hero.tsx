@@ -1,3 +1,4 @@
+"use client";
 import { JSX } from "react";
 import css from './Hero.module.css';
 import HeroSwiper from '@/components/HeroSwiper/HeroSwiper';

@@ -1,5 +1,6 @@
 :root {
    --font-family: 'Inter', sans-serif;
+   --logo-font-family: "Caveat", cursive;
   --f0e2d0: #f0e2d0;
   --light-orange: #edc58c;
   --orange: #f79d1d;
@@ -52,6 +53,7 @@ a {
 button {
   cursor: pointer;
   border: none;
+  background-color: transparent;
 }
 
 img {

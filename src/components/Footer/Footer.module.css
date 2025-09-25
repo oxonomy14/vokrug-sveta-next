@@ -1,6 +1,8 @@
 .wrapFooter {
   background: #1a1a1a;
-  padding: 45px 0px 12px 0px;
+width: 100%;
+  padding-top: 45px;
+  padding-bottom: 12px;
   display: flex;
   flex-direction: column;
 }
@@ -56,7 +58,7 @@
 }
 
 .footerCopyRightBox {
-  padding: 0px 62px 0px 62px;
+ 
 }
 
 .footerCopyRightBorder {
@@ -64,6 +66,7 @@
   height: 1px;
   background-color: var(--light-black);
   border: none;
+  width: 100%;
 }
 
 .footerCopyRightText {

@@ -5,8 +5,8 @@ import Container from '@/components/Container/Container';
 
 export default function Footer() {
   return (
-    <section>
-      <Container className={css.wrapFooter}>
+    <div  className={css.wrapFooter}>
+      <Container>
         <div className={css.footerLogoBlock}>
           <p className={css.footerLogoBlockFirstText}>Вокруг Света</p>
           <p className={css.footerLogoBlockSecondText}>
@@ -27,6 +27,6 @@ export default function Footer() {
           </p>
         </div>
       </Container>
-    </section>
+    </div>
   );
 }

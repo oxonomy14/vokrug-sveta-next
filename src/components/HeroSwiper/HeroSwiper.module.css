@@ -1,9 +1,9 @@
-.categoryPostItemImgWrapper {
+/* .categoryPostItemImgWrapper {
   position: relative;
-  width: 100%; /* ширина под слайд */
-  aspect-ratio: 868 / 496; /* сохраняем пропорции */
+  width: 100%; 
+  aspect-ratio: 868 / 496; 
   overflow: hidden;
-  border-radius: 12px; /* красиво скруглим углы */
+  border-radius: 12px; 
   margin-bottom: 16px;
 }
 
@@ -23,7 +23,7 @@
   font-weight: 500;
   font-size: 13px;
 
-  /* line-height: 24px; */
+ 
   line-height: 1.84615;
   color: var(--orange);
 }
@@ -38,7 +38,7 @@
   font-weight: 500;
   font-size: 13px;
 
-  /* line-height: 24px; */
+ 
   line-height: 1.84615;
   color: var(--grey);
 }
@@ -47,12 +47,59 @@
  
   font-weight: 400;
   font-size: 33px;
-  /* line-height: 32px; */
+  
   line-height: 1.3913;
   text-transform: none;
   color: var(--black);
   max-width: 420px;
   
+} */
+
+
+.categoryPostItemImgWrapper {
+  position: relative;
+  width: 100%;
+  height: 320px; /* можна змінити */
+  overflow: hidden;
+  border-radius: 16px;
 }
 
+.categoryPostItemImg {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
 
+.categoryPostItemImgWrapper:hover .categoryPostItemImg {
+  transform: scale(1.05); /* легкий zoom при hover */
+}
+
+.categoryPostItemOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  color: var(--white);
+}
+
+.categoryPostItemImgWrapper:hover .categoryPostItemOverlay {
+  opacity: 1;
+}
+
+.categoryPostItemInfo {
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.9;
+}
+
+.categoryPostItemTitle {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3;
+}

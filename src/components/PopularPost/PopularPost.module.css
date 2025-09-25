@@ -1,12 +1,10 @@
-.wrapCategoryPost {
-  background-color: rgba(237, 197, 140, 0.5);
+.wrapPostPopular {
 padding-top: 109px;
 padding-bottom: 109px;
-width: 100%;
-  
+  /* background-color: rgba(237, 197, 140, 0.5); */
 }
 
-.categoryPostTitle {
+.postPopularTitle {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 33px;
@@ -19,7 +17,7 @@ width: 100%;
   margin-bottom: 7px;
 }
 
-.categoryPostTitleDesc {
+.postPopularTitleDesc {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
@@ -31,31 +29,38 @@ width: 100%;
   margin-bottom: 55px;
 }
 
-.categoryPostList {
+.postPopularBox {
   display: flex;
-  flex-wrap: wrap;
-  gap: 55px 28px;
+  gap: 56px;
+  justify-content: space-between;
 }
 
-.categoryPostItem {
-  width: calc((100%-56px) / 3);
+.postPopularBoxLeft {
+  max-width: 952px;
 }
 
-.categoryPostItemImg {
+.postPopularBoxLeftList {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+.postPopularBoxLeftItemPost {
+  display: flex;
+  gap: 28px;
+}
+
+.postPopularBoxLeftItemImg {
   width: 420px;
-  height: 304px;
-  border-radius: 24px;
-  margin-bottom: 16px;
+  height: 236px;
   object-fit: cover;
 }
 
-.categoryPostItemInfo {
-  display: flex;
-  gap: 30px;
+.postPopularBoxLeftItemPostInfo {
   margin-bottom: 8px;
 }
 
-.categoryPostItemInfoCategory {
+.postPopularBoxLeftItemPostCategory {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 13px;
@@ -63,14 +68,12 @@ width: 100%;
   /* line-height: 24px; */
   line-height: 1.84615;
   color: var(--orange);
-}
-
-.categoryPostItemInfoCategory span {
+  margin-right: 30px;
   display: inline-block;
   box-shadow: inset 0 -2px 0 0 var(--light-orange);
 }
 
-.categoryPostItemInfoAuthor {
+.postPopularBoxLeftItemPostAuthor {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 13px;
@@ -80,7 +83,7 @@ width: 100%;
   color: var(--grey);
 }
 
-.categoryPostItemTitle {
+.postPopularBoxLeftItemPostTitle {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 23px;
@@ -93,7 +96,7 @@ width: 100%;
   margin-bottom: 12px;
 }
 
-.categoryPostItemDesc {
+.postPopularBoxLeftItemPostDesc {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
@@ -101,11 +104,14 @@ width: 100%;
   /* line-height: 28px; */
   line-height: 1.75;
   color: var(--light-black);
-  max-width: 420px;
+  max-width: 504px;
 }
 
-@media only screen and (min-width: 768px) {
+.postPopularBoxRight {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 308px;
 }
 
-@media only screen and (min-width: 1440px) {
-}
+

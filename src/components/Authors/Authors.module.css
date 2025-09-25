@@ -1,0 +1,18 @@
+.wrapAuthors {
+     padding-top: 109px;
+  padding-bottom: 109px;
+  background-color: rgba(237, 197, 140, 0.5);
+}
+
+.title {
+      font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 33px;
+
+
+  line-height: 1.45455;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--black);
+  margin-bottom: 75px;
+}

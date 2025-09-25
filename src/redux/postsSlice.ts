@@ -1,17 +1,20 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { fetchPosts } from "./operations";
-import type { Post } from "../types/post";
+import type { Pagination, Post } from "../types/post";
 
 interface PostsState {
-  items: Post[];
-  loading: boolean;
-  error: string | null;
+  byCategory: {
+    [key: string]: {
+      items: Post[];
+      pagination: Pagination;
+      loading: boolean;
+      error: string | null;
+    };
+  };
 }
 
 const initialState: PostsState = {
-  items: [],
-  loading: false,
-  error: null,
+  byCategory: {},
 };
 
 const postsSlice = createSlice({
@@ -20,19 +23,45 @@ const postsSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(fetchPosts.pending, (state) => {
-        state.loading = true;
-        state.error = null;
+      .addCase(fetchPosts.pending, (state, action) => {
+        const category = action.meta.arg.category ?? "all";
+        state.byCategory[category] = {
+          items: [],
+          pagination: { limit: 0, offset: 0, total: 0 },
+          loading: true,
+          error: null,
+        };
       })
-      .addCase(fetchPosts.fulfilled, (state, action) => {
-        state.loading = false;
-        state.items = action.payload.data; // ✅ типізовано
-      })
+   .addCase(fetchPosts.fulfilled, (state, action) => {
+  const { category, data, pagination } = action.payload;
+  const cat = category ?? "all";
+
+  if (state.byCategory[cat]) {
+    // Додаємо до існуючих постів
+    state.byCategory[cat].items.push(...data);
+    state.byCategory[cat].pagination = pagination;
+    state.byCategory[cat].loading = false;
+    state.byCategory[cat].error = null;
+  } else {
+    // Якщо категорія вперше
+    state.byCategory[cat] = {
+      items: data,
+      pagination,
+      loading: false,
+      error: null,
+    };
+  }
+})
       .addCase(fetchPosts.rejected, (state, action) => {
-        state.loading = false;
-        state.error = action.error.message ?? "Unknown error";
+        const category = action.meta.arg.category ?? "all";
+        state.byCategory[category] = {
+          items: [],
+          pagination: { limit: 0, offset: 0, total: 0 },
+          loading: false,
+          error: action.error.message || "Error fetching posts",
+        };
       });
+
   },
 });
-
 export default postsSlice.reducer;

@@ -1,13 +1,15 @@
 .wrapperFirstHeader {
   border-top: 2px solid #f79d1d;
   width: 100%;
+   padding-top: 38px;
+  padding-bottom: 38px;
 }
 .firstHeader {
-  padding: 38px 62px 38px 71.45px;
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logoBlock {
@@ -17,14 +19,18 @@
 
 .logoBlockFirstText {
   margin-right: 19.85px;
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 18px;
+  font-family: var(--logo-font-family);
+  font-weight: 700;
+  font-size: 30px;
 
   /* line-height: 24px; */
   line-height: 1.84615;
-  color: var(--light-black);
-  text-transform: uppercase;
+  color: var(--orange);
+  text-transform: lowercase;  
+}
+
+.logoBlockFirstText span {
+     color: var(--light-black);
 }
 
 .logoBlockSecondText {
@@ -103,33 +109,3 @@
   width: 100%;
 }
 
-.secondHeader {
-  padding: 34px 174px 34px 174px;
-}
-
-.navList {
-  display: flex;
-  flex-direction: row;
-  gap: 42px;
-}
-
-.navItemText {
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 16px;
-
-  /* line-height: 28px; */
-  line-height: 1.75;
-  text-transform: uppercase;
-  color: var(--black);
-}
-
-.navItemText:hover,
-.navItemText:focus {
-  color: var(--orange);
-  cursor: pointer;
-}
-
-.active {
-  color: var(--orange);
-}

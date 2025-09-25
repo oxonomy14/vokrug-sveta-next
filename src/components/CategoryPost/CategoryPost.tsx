@@ -17,13 +17,15 @@ const CategoryPost: React.FC<CategoryPostProps> = ({ posts }: CategoryPostProps)
 
   return (
     <section>
-      <Container className={css.wrapCategoryPost}>
+      <div className={css.wrapCategoryPost}>
+
+      <Container >
         <h2 className={css.categoryPostTitle}>
           Куда съездить отдохнуть: блог о путешествиях
         </h2>
-        <p className={css.categoryPostTitleDesc}>описание к заголовку</p>
+        <p className={css.categoryPostTitleDesc}>От пляжей до мегаполисов, куда поехать за яркими впечатлениями</p>
         <ul className={css.categoryPostList}>
-          {posts.length === 0 ? (
+          {posts.length === 0 ? (            
             <li>Постов нет</li>
           ) : (
             posts.map((post) => (
@@ -40,7 +42,7 @@ const CategoryPost: React.FC<CategoryPostProps> = ({ posts }: CategoryPostProps)
                 />
                 <div className={css.categoryPostItemInfo}>
                   <div className={css.categoryPostItemInfoCategory}>
-                    <span>{post.category || "Категория"}</span>
+                    <span>{post.category_title || "Категория"}</span>
                   </div>
                   <div className={css.categoryPostItemInfoAuthor}>
                     <span>{post.author_name}</span>
@@ -55,7 +57,8 @@ const CategoryPost: React.FC<CategoryPostProps> = ({ posts }: CategoryPostProps)
           )}
         </ul>
       </Container>
-    </section>
+      </div>
+          </section>
   );
 }
 export default CategoryPost;

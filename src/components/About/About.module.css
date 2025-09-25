@@ -1,6 +1,7 @@
 .wrapAbout {
-  padding: 54px 146px 103px 146px;
-  box-shadow: 0 -1px 0 0 rgba(240, 226, 208, 0.5);
+  /* box-shadow: 0 -1px 0 0 rgba(240, 226, 208, 0.5); */
+  padding-top: 109px;
+  padding-bottom: 109px;
 }
 
 .aboutTitle {

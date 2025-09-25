@@ -1,0 +1,122 @@
+
+
+
+.latestPost {
+  padding: 28px 28px 36px 28px;
+  border: 1px solid #f0e2d0;
+}
+
+.latestPostTitle {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 19px;
+
+  /* line-height: 28px; */
+  line-height: 1.47368;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--black);
+  margin-bottom: 32px;
+}
+
+.latestPostList {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.latestPostItem {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.latestPostItem img {
+  object-fit: contain;
+  width: 84px;
+  height: 68px;
+  flex-shrink: 0;
+}
+
+.latestPostItemTitle {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+
+  /* line-height: 24px; */
+  line-height: 1.5;
+  color: var(--black);
+}
+
+.latestPostItemDate {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 13px;
+
+  /* line-height: 24px; */
+  line-height: 1.84615;
+  color: #a0998f;
+}
+
+.tags {
+  padding: 28px 28px 36px 28px;
+  border: 1px solid #f0e2d0;
+}
+
+.tagsTitle {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 19px;
+
+  /* line-height: 28px; */
+  line-height: 1.47368;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--black);
+  margin-bottom: 15px;
+}
+
+.tagsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+
+.tagsItem {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 13px;
+
+  /* line-height: 24px; */
+  line-height: 1.84615;
+  color: var(--orange);
+  box-shadow: inset 0 -2px 0 0 var(--light-orange);
+}
+
+.aboutAuthor {
+  padding: 28px 28px 36px 28px;
+  border: 1px solid #f0e2d0;
+}
+
+.aboutAuthorTitle {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 19px;
+
+  /* line-height: 28px; */
+  line-height: 1.47368;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--black);
+}
+
+.aboutAuthorDesc {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+
+  /* line-height: 28px; */
+  line-height: 1.75;
+  text-align: center;
+  color: var(--light-black);
+}
