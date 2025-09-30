@@ -1,0 +1,73 @@
+
+
+.postPopularBoxLeftList {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+.postPopularBoxLeftItemPost {
+  display: flex;
+  gap: 28px;
+}
+
+.postPopularBoxLeftItemImg {
+  width: 420px;
+  height: 236px;
+  object-fit: cover;
+}
+
+.postPopularBoxLeftItemPostInfo {
+  margin-bottom: 8px;
+}
+
+.postPopularBoxLeftItemPostCategory {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 13px;
+
+  /* line-height: 24px; */
+  line-height: 1.84615;
+  color: var(--orange);
+  margin-right: 30px;
+  display: inline-block;
+  box-shadow: inset 0 -2px 0 0 var(--light-orange);
+}
+
+.postPopularBoxLeftItemPostAuthor {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 13px;
+
+  /* line-height: 24px; */
+  line-height: 1.84615;
+  color: var(--grey);
+}
+
+.postPopularBoxLeftItemPostTitle {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 23px;
+
+  /* line-height: 32px; */
+  line-height: 1.3913;
+  text-transform: none;
+  color: var(--black);
+  max-width: 420px;
+  margin-bottom: 12px;
+}
+
+.postPopularBoxLeftItemPostDesc {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+
+  /* line-height: 28px; */
+  line-height: 1.75;
+  color: var(--light-black);
+  max-width: 504px;
+}
+
+
+
+

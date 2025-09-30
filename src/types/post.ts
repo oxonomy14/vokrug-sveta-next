@@ -20,7 +20,7 @@ export interface Post {
   author_name: string;
   author_bio: string | null;
   category_title: string;
-  category_slug: string;
+  category_slug: string;  
 }
 
 
@@ -30,3 +30,5 @@ export interface Pagination {
     offset: number;
     total: number;
  }
+
+ 

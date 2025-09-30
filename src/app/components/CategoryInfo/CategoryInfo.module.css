@@ -1,0 +1,30 @@
+.categoryInfo {
+  display: flex;
+  gap: 30px;
+  
+}
+
+.categoryPost {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 13px;
+
+  /* line-height: 24px; */
+  line-height: 1.84615;
+  color: var(--orange);
+}
+
+.categoryPost span {
+  display: inline-block;
+  box-shadow: inset 0 -2px 0 0 var(--light-orange);
+}
+
+.categoryAuthor {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 13px;
+
+  /* line-height: 24px; */
+  line-height: 1.84615;
+  color: var(--grey);
+}

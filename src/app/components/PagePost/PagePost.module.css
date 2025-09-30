@@ -1,0 +1,24 @@
+.wrapHeadline {
+background-color: #ccc;
+width: 100%;
+padding-top: 94px;
+padding-bottom: 60px;margin-bottom: 48px;
+}
+
+.headline {
+font-weight: 400;
+font-size: 33px;
+line-height: 145%;
+text-align: center;
+color: var(--black);
+}
+
+.wrap {
+    display: flex;
+    gap: 56px;
+    
+}
+
+.content {
+    
+}

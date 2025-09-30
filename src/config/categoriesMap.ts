@@ -5,6 +5,7 @@ export const categoriesMap: Record<string, Record<string, string>> = {
     hero: "",
     travel: "puteshestviya",
     tips: "poleznye-sovety",
+    puteshestviya: "puteshestviya",
   },
   uk: {
     all: "",

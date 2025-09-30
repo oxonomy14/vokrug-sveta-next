@@ -1,5 +1,4 @@
-// lib/getPosts.ts
-import { Post } from "@/types/post";
+// src/lib/getPosts.ts
 
 interface FetchPostsArgs {
   lang: "ru" | "uk";
@@ -11,8 +10,9 @@ export async function getPosts({
   lang,
   category,
   sort,
-}: FetchPostsArgs): Promise<Post[]> {
-  const params = new URLSearchParams({ lang, category });
+}: FetchPostsArgs) {
+
+const params = new URLSearchParams({ lang, category });
 
   if (sort) {
     params.append("sortField", sort.field);
@@ -31,7 +31,7 @@ export async function getPosts({
 
   const data = await res.json();
 
-  // Перевірка: чи отримали масив
+  // Якщо API одразу повертає масив
   if (Array.isArray(data)) {
     return data;
   }

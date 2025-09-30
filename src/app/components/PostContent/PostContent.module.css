@@ -1,0 +1,56 @@
+.headlineImg {
+object-fit: cover;
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.subTitle {
+
+font-weight: 400;
+font-size: 33px;
+line-height: 145%;
+color: var(--black);
+margin-bottom: 2px;
+}
+
+.categoryInfo {
+ 
+  margin-bottom: 14px;
+}
+
+
+.meta {
+    margin-bottom: 29px;
+}
+
+.body {
+
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+color: var(--light-black);
+}
+
+.body img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    margin-bottom: 33px;
+}
+
+
+
+.body p {
+    margin-bottom: 27px;
+} 
+
+.body h3 {
+
+font-weight: 500;
+font-size: 23px;
+line-height: 139%;
+text-transform: capitalize;
+color: var(--black);
+    margin-bottom: 29px;
+}

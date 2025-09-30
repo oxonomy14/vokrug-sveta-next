@@ -1,7 +1,7 @@
 
 // app/uk/layout.tsx
 import type { Metadata } from "next";
-import { Providers } from "../providers";
+import Providers  from "@/app/components/Providers";
 import "../globals.css";
 
 export const metadata: Metadata = {
